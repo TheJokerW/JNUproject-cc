@@ -1,0 +1,10 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+F:/project_2/project_2/project_2.sim/sim_1/behav/xsim/glbl.v,1513215260,verilog,,,,glbl,,,,,,,,
+F:/project_2/project_2/project_2.srcs/sim_1/new/top_test.v,1573214290,verilog,,,,top_test,,,,,,,,
+F:/project_2/project_2/project_2.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1573215226,verilog,,F:/project_2/project_2/project_2.srcs/sources_1/new/PC.v,,dist_mem_gen_0,,,,,,,,
+F:/project_2/project_2/project_2.srcs/sources_1/new/PC.v,1573214760,verilog,,F:/project_2/project_2/project_2.srcs/sources_1/new/romTest.v,,PC,,,,,,,,
+F:/project_2/project_2/project_2.srcs/sources_1/new/romTest.v,1573214414,verilog,,F:/project_2/project_2/project_2.srcs/sources_1/new/top.v,,romTest,,,,,,,,
+F:/project_2/project_2/project_2.srcs/sources_1/new/top.v,1573214560,verilog,,F:/project_2/project_2/project_2.srcs/sim_1/new/top_test.v,,top,,,,,,,,

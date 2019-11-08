@@ -1,0 +1,336 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Nov  8 20:17:58 2019
+# Process ID: 8320
+# Current directory: F:/project_2/project_2/project_2.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: F:/project_2/project_2/project_2.runs/synth_1/top.vds
+# Journal file: F:/project_2/project_2/project_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4432 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 352.801 ; gain = 97.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [F:/project_2/project_2/project_2.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'romTest' [F:/project_2/project_2/project_2.srcs/sources_1/new/romTest.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC' [F:/project_2/project_2/project_2.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PC' (1#1) [F:/project_2/project_2/project_2.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [F:/project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-8320-Stu59/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (2#1) [F:/project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-8320-Stu59/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'romTest' (3#1) [F:/project_2/project_2/project_2.srcs/sources_1/new/romTest.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'next_addr' does not match port width (6) of module 'romTest' [F:/project_2/project_2/project_2.srcs/sources_1/new/top.v:29]
+WARNING: [Synth 8-689] width (12) of port connection 'rdata' does not match port width (32) of module 'romTest' [F:/project_2/project_2/project_2.srcs/sources_1/new/top.v:29]
+INFO: [Synth 8-256] done synthesizing module 'top' (4#1) [F:/project_2/project_2/project_2.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 404.711 ; gain = 149.203
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 404.711 ; gain = 149.203
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-8320-Stu59/dcp1/dist_mem_gen_0_in_context.xdc] for cell 'rt/d'
+Finished Parsing XDC File [F:/project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-8320-Stu59/dcp1/dist_mem_gen_0_in_context.xdc] for cell 'rt/d'
+Parsing XDC File [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc]
+WARNING: [Vivado 12-584] No ports matched 'result[31]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'result[30]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'result[29]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'result[28]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'result[27]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'result[26]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'result[25]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'result[24]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'result[23]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'result[22]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'result[21]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'result[20]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'result[19]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'result[18]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'result[17]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'result[16]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'result[15]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'result[14]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'result[13]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'result[12]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'result[31]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'result[30]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'result[29]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'result[28]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'result[27]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'result[26]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'result[25]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'result[24]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'result[23]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'result[22]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'result[21]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'result[20]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'result[19]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'result[18]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'result[17]'. [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc:62]
+Finished Parsing XDC File [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/project_2/project_2/project_2.srcs/constrs_1/new/noname.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 723.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 723.078 ; gain = 467.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 723.078 ; gain = 467.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for rt/d. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 723.078 ; gain = 467.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 723.078 ; gain = 467.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'rt/pc/oaddr_reg[4]' (FDR) to 'rt/pc/oaddr_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rt/pc/oaddr_reg[5] )
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rt/pc/oaddr_reg[5]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 723.078 ; gain = 467.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 742.781 ; gain = 487.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 742.855 ; gain = 487.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 752.887 ; gain = 497.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 752.887 ; gain = 497.379
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 752.887 ; gain = 497.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 752.887 ; gain = 497.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 752.887 ; gain = 497.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 752.887 ; gain = 497.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 752.887 ; gain = 497.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |dist_mem_gen_0 |     1|
+|2     |BUFG           |     1|
+|3     |FDRE           |     4|
+|4     |IBUF           |     6|
+|5     |OBUF           |    12|
++------+---------------+------+
+
+Report Instance Areas: 
++------+---------+--------+------+
+|      |Instance |Module  |Cells |
++------+---------+--------+------+
+|1     |top      |        |    55|
+|2     |  rt     |romTest |    36|
+|3     |    pc   |PC      |     4|
++------+---------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 752.887 ; gain = 497.379
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 752.887 ; gain = 179.012
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 752.887 ; gain = 497.379
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 762.313 ; gain = 518.270
+INFO: [Common 17-1381] The checkpoint 'F:/project_2/project_2/project_2.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 762.313 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 20:18:37 2019...
