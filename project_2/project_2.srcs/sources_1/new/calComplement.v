@@ -30,15 +30,16 @@ module calWithRegs_FIB(
     reg[4:0] ra1,ra2,wa;
     reg[0:0] we;
     wire [31:0]a,b,f;
+    wire z;
     assign result=f;
-   
+    
     integer count=2;
     reg[1:0] status=2'b00; 
     parameter op=4'b0001;
     registerGroup regs(.oc(~rst),.raddr1(ra1),.raddr2(ra2),.waddr(wa),.wdata(wdata),.clk(clk),.WE(we),.rdata1(a),.rdata2(b));  
-     ALU alu(a,b,op,f);    
-    always @(posedge clk)
-    begin      
+     ALU alu(a,b,op,f,z);    
+    always @(posedge clk )
+    begin    
         if(rst==1'b0)
             begin
             status<=2'b00;
@@ -63,18 +64,24 @@ module calWithRegs_FIB(
                 end
             2'b01:
                 begin
-                we<=1'b1;
-                wa<=5'b10;
-                wdata<=32'b1;
+                if(wa>2)
+                begin
+                ra1<=ra1+1;
+                ra2<=ra2+1;
                 status<=2'b10;
+                end
+                else
+                    begin
+                    we<=1'b1;
+                    wa<=5'b10;
+                    wdata<=32'b1;
+                    status<=2'b10;
+                    end
                 end
             2'b10:
                 begin
                 we<=1'b1;
-                wa<=ra2+1;
-                wdata<=f;
-                ra1<=ra2;
-                ra2<=wa;
+                wa<=ra2+1'b1;                              
                 status<=2'b11;
                 count<=count+1;
                 end
@@ -82,7 +89,8 @@ module calWithRegs_FIB(
                 begin
                 if(count<n)
                     begin
-                    status<=2'b10;
+                    wdata<=f; 
+                    status<=2'b01;
                     end
                 end
              default:
